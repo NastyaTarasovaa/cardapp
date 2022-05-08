@@ -1,11 +1,11 @@
 import './App.css';
-import './components/Add_word';
-import './components/Card';
-import './components/Delete_word';
-import './components/Dictionary';
-import './components/Edit_word';
-import './components/Footer';
-import './components/Header';
+import Add_word from'./components/Add_word';
+import Card from './components/Card';
+import Delete_word from './components/Delete_word';
+import Dictionary from './components/Dictionary';
+import Edit_word from './components/Edit_word';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
