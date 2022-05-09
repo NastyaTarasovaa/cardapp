@@ -6,13 +6,14 @@ import Dictionary from './components/Dictionary';
 import Edit_word from './components/Edit_word';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Table from './components/Table'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    
-      </header>
+      <Table></Table>
     </div>
   );
 }
