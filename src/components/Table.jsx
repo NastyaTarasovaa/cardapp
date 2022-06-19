@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaTrashAlt } from 'react-icons/fa';
+import { FaMarker } from 'react-icons/fa';
+
 
 
 function table() {
@@ -18,24 +21,30 @@ function table() {
     ];
 
     let res = words.map(function (item) {
-        return <tr key={item.id}>
+        return <tr>
+            <td key={item.id}></td>
             <td>{item.english}</td>
             <td>{item.transcription}</td>
             <td>{item.russian}</td>
-        </tr>;
+            < FaMarker ></FaMarker >
+            <FaTrashAlt></FaTrashAlt>
+        </tr >
     });
 
     return <table>
         <thead>
             <tr>
+                <td>№</td>
                 <td>Слово</td>
                 <td>Транскрипция</td>
                 <td>Перевод</td>
+
 
             </tr>
         </thead>
         <tbody>
             {res}
+
         </tbody>
     </table>;
 }

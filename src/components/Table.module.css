@@ -1,4 +1,28 @@
+/*.Table {
+    table-layout: fixed;
+    border: solid 1px black;
+    background-color: rgb(164, 209, 209);
+    margin-top: 25%;
+    margin-left: 1%;
+   
+}*/
+
 .Table {
-    display:flex;
-    flex-direction: space-between; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background-color: rgb(233, 190, 213);
+  max-width: 70%;
+  width: 70%;
+  border-collapse: collapse;
+  
 }
+
+td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+  }
+  tr:hover td {
+    background: #e8edff;
+  }
+
