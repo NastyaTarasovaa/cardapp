@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+height: 50vh;
+    word-break: break-word; 
+    color: #669
+}
+
+
+.card_wrapper {
+    
+    width: 40%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: rgb(233, 190, 213);
+    
+}
+
+
+.card_word {
+   flex-basis: 40%;
+    font-size: 4rem;
+    margin: 10px auto; 
+    
+}
+
+.card_transcription {
+    flex-basis: 20%;
+    margin: 0 auto 10px;
+}
+
+.card__translation {
+    flex-basis: 25%;
+}
+

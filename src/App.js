@@ -11,9 +11,14 @@ import styles from './components/Table.module.css';
 
 
 
+
+
 function App() {
   return (
     <div className="App">
+      <div>
+        <Card></Card>
+        </div>
       <div className={styles.Table}>
       <Table></Table>
       </div>
