@@ -4,7 +4,7 @@ import { FaTrashAlt } from 'react-icons/fa'
 function Delete_button() {
     return (
         <div className='Delete_button'>
-            <FaTrashAlt></FaTrashAlt>
+            <button><FaTrashAlt></FaTrashAlt></button>
         </div>
     )
 }

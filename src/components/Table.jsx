@@ -4,6 +4,7 @@ import { FaMarker } from 'react-icons/fa';
 
 
 
+
 function table() {
     const words = [
         { id: 1, english: "street", transcription: "[stri:t]", russian: "улица" },
@@ -26,9 +27,11 @@ function table() {
             <td>{item.english}</td>
             <td>{item.transcription}</td>
             <td>{item.russian}</td>
-            < FaMarker ></FaMarker >
-            <FaTrashAlt></FaTrashAlt>
-        </tr >
+            <td>
+                <button ><FaMarker ></FaMarker ></button>
+                <button><FaTrashAlt></FaTrashAlt></button>
+            </td>
+        </tr>
     });
 
     return <table>
@@ -38,6 +41,7 @@ function table() {
                 <td>Слово</td>
                 <td>Транскрипция</td>
                 <td>Перевод</td>
+                <td>Действия</td>
 
 
             </tr>
