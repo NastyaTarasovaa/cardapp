@@ -2,9 +2,6 @@ import React from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import { FaMarker } from 'react-icons/fa';
 
-
-
-
 function table() {
     const words = [
         { id: 1, english: "street", transcription: "[stri:t]", russian: "улица" },
