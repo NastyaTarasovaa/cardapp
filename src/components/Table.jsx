@@ -23,7 +23,7 @@ function table() {
 
     let res = words.map(function (item) {
         return <tr>
-            <td key={item.id}></td>
+            <td>{item.id}</td>
             <td>{item.english}</td>
             <td>{item.transcription}</td>
             <td>{item.russian}</td>
@@ -31,7 +31,7 @@ function table() {
                 <button ><FaMarker ></FaMarker ></button>
                 <button><FaTrashAlt></FaTrashAlt></button>
             </td>
-        </tr>
+        </tr >
     });
 
     return <table>
