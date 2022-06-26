@@ -1,8 +1,10 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import { FaMarker } from 'react-icons/fa';
+import TableStyles from './Table.module.css';
 
-function table() {
+
+function Table(props) {
     const words = [
         { id: 1, english: "street", transcription: "[stri:t]", russian: "улица" },
         { id: 2, english: "car", transcription: "[kɑ:]", russian: "автомобиль" },
@@ -18,20 +20,34 @@ function table() {
         { id: 12, english: "cat", transcription: "[kæt]", russian: "кот" },
     ];
 
+    const [isEdit, setIsEdit] = useState(true);
+
+    const handleIsEdit = () => {
+        setIsEdit(!isEdit)
+    }
+
     let res = words.map(function (item) {
-        return <tr>
+        return <tr className={TableStyles.Table}>
             <td>{item.id}</td>
-            <td>{item.english}</td>
-            <td>{item.transcription}</td>
-            <td>{item.russian}</td>
+            <td>{item.english}{isEdit ? props.english : <input type="text"
+                value={props.english} onChange={() => { console.log(props.english) }} />}</td>
+            <td>{item.transcription}{isEdit ? props.transcription :
+                <input type="text"
+                    value={props.transcription}
+                    onChange={() => { console.log(props.transcription) }} />}</td>
+            <td>{item.russian}{isEdit ? props.russian : <input type="text"
+                value={props.russian}
+                onChange={() => { console.log(props.russian) }}
+            />}</td>
             <td>
-                <button ><FaMarker ></FaMarker ></button>
-                <button><FaTrashAlt></FaTrashAlt></button>
+                <button className={isEdit ? TableStyles.btn_edit : TableStyles.btn_edit__save} onClick={handleIsEdit}>{isEdit && <FaMarker />}{!isEdit && "Сохранить"}</button>
+                {isEdit && <button className={TableStyles.btn_delete}><FaTrashAlt /></button>}
             </td>
         </tr >
+
     });
 
-    return <table>
+    return <table >
         <thead>
             <tr>
                 <td>№</td>
@@ -48,8 +64,7 @@ function table() {
 
         </tbody>
     </table>;
+
 }
+export default Table
 
-
-
-export default table

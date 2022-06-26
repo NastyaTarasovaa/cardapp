@@ -1,9 +1,7 @@
 import './App.css';
-import Header from './components/Header';
+import React from 'react';
 import Table from './components/Table';
-import Changecard from './components/Changecard';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
-//+ импорт страницы ошибки
+//+ импорт страницы ошибки, Dom 
 
 
 function App() {
@@ -22,18 +20,11 @@ function App() {
     ];
 
     return (
-      <BrowserRouter>
-      <div className={styles.App}>
-       <Table></Table>
-      </div>
-    </BrowserRouter>
-    );
-  }
+<div className="App">
+  <Table></Table>
+</div>
 
-
-
-
-
-
+      );
+}
 
 export default App;

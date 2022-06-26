@@ -20,3 +20,51 @@ td {
     background: #e8edff;
   }
 
+  .btn_edit {
+    margin-left: 5px;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(116, 9, 204);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_edit__save {
+    margin-left: 5px;
+    width: 85px;
+    height: 30px;
+    background-color: rgb(97, 15, 76);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.btn_edit__save:hover {
+    background-color: rgb(124, 49, 173);
+}
+
+
+.btn_edit:hover {
+    background-color: rgb(122, 5, 133);
+}
+
+.btn_delete {
+    margin-left: 5px;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(173, 17, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn_delete:hover {
+    background-color: rgb(126, 10, 120);
+}
+
