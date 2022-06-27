@@ -31,7 +31,7 @@ td {
     cursor: pointer;
 }
 
-.btn_edit__save {
+.button_edit__save {
     margin-left: 5px;
     width: 85px;
     height: 30px;
@@ -43,16 +43,16 @@ td {
     font-weight: bolder;
 }
 
-.btn_edit__save:hover {
+.button_edit__save:hover {
     background-color: rgb(124, 49, 173);
 }
 
 
-.btn_edit:hover {
+.button_edit:hover {
     background-color: rgb(122, 5, 133);
 }
 
-.btn_delete {
+.button_delete {
     margin-left: 5px;
     width: 40px;
     height: 30px;
@@ -64,7 +64,7 @@ td {
 }
 
 
-.btn_delete:hover {
+.button_delete:hover {
     background-color: rgb(126, 10, 120);
 }
 

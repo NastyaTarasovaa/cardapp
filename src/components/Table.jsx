@@ -40,8 +40,8 @@ function Table(props) {
                 onChange={() => { console.log(props.russian) }}
             />}</td>
             <td>
-                <button className={isEdit ? TableStyles.btn_edit : TableStyles.btn_edit__save} onClick={handleIsEdit}>{isEdit && <FaMarker />}{!isEdit && "Сохранить"}</button>
-                {isEdit && <button className={TableStyles.btn_delete}><FaTrashAlt /></button>}
+                <button className={isEdit ? TableStyles.button_edit : TableStyles.button_edit__save} onClick={handleIsEdit}>{isEdit && <FaMarker />}{!isEdit && "Сохранить"}</button>
+                {isEdit && <button className={TableStyles.button_delete}><FaTrashAlt /></button>}
             </td>
         </tr >
 
