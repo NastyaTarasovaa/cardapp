@@ -1,49 +1,20 @@
-import React from 'react';
+import CardStyles from './Card.module.css';
 import { FaArrowLeft } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
-import styles from './Slider_button.module.css';
 
 export default function Slider_button(props) {
     return (
-        <div className={styles.btn_container}>
-            <button className={styles.btn_leftright} onClick={props.showPrev}><FaArrowLeft /></button>
-            <button className={styles.btn_leftright} onClick={props.showNext}><FaArrowRight /></button>
+        <div className={CardStyles.button_box}>
+            <button className={CardStyles.button_leftright} onClick={props.showPrev}><FaArrowLeft /></button>
+
+            <div>{props.card}</div>
+
+            <button className={CardStyles.button_leftright} onClick={props.showNext}><FaArrowRight /></button>
+
+            <div>Выучено слов: {props.count}</div>
 
         </div>
+
     )
 }
 
-export default function CardSlider({ words }) {
-
-    const [currentItem, setPosition] = useState(0);
-
-    const showNext = () => {
-        setPosition(currentItem + 1);
-    }
-
-    const showPrev = () => {
-        if (currentItem > 0)
-            setPosition(currentItem - 1);
-    }
-
-    if (currentItem >= words.length) {
-        return (
-            <div className={styles.wrapper}>
-                <div className={styles.end}>Вы выучили все слова!</div>
-            </div>
-        )
-    } else {
-        return (
-            <Slider_button>
-                showPrev = {showPrev}
-                showNext = {showNext}
-                card = {< Card
-                    id={words[currentItem].id}
-                    english={words[currentItem].english}
-                    transcription={words[currentItem].transcription}
-                    russian={words[currentItem].russian}
-                />}
-            </Slider_button >
-        )
-    }
-}

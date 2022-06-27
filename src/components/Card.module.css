@@ -42,3 +42,45 @@ height: 50vh;
     flex-basis: 25%;
 }
 
+.button_edit__inspect:hover {
+    background-color: rgb(40, 141, 40);
+}
+
+.button_edit__show {
+    width: max-content;
+    height: 30px;
+    background-color: transparent;
+    text-align: center;
+    color: rgb(31, 114, 31);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.button_leftright {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: larger;
+    margin-top: 150px;
+}
+
+.button_leftright:hover {
+    color: rgb(115, 26, 156);
+}
+
+.button_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 50px;
+
+    width: 120px;
+    border-color: 1px solid red;
+}
+
+

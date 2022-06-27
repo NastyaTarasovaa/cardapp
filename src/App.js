@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 import Table from './components/Table';
+import Card from './components/Card';
+
 //+ импорт страницы ошибки, Dom 
 
 
@@ -21,7 +23,9 @@ function App() {
 
     return (
 <div className="App">
+  <Card></Card>
   <Table></Table>
+
 </div>
 
       );
